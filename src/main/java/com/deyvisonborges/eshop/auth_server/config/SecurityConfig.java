@@ -68,6 +68,7 @@ public class SecurityConfig {
      * Configura o filtro de segurança para autorizar todas as requisições apenas 
      * para usuários autenticados.
      */
+		http.authorizeHttpRequests((authorize) -> authorize.requestMatchers("/test").permitAll());
 		http.authorizeHttpRequests((authorize) -> authorize.anyRequest().authenticated())
       
 			// Form login handles the redirect to the login page from the

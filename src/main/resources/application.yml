@@ -1,6 +1,15 @@
+logging:
+  level:
+    org.springframework.cloud.config.client: DEBUG
+
+server:
+  port: 8181
 spring:
   application:
-    name: auth-server
+    name: authorizer
+  config:
+    import:
+      - configserver:http://localhost:8080
   security:
     user:
       name: user
@@ -25,5 +34,3 @@ spring:
                 - "openid"
                 - "profile"
             require-authorization-consent: true
-server:
-  port: 8181

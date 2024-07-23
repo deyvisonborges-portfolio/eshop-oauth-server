@@ -1,4 +1,4 @@
-package com.deyvisonborges.eshop.auth_server.config;
+package com.deyvisonborges.eshop.authorizer.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

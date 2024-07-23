@@ -1,4 +1,4 @@
-package com.deyvisonborges.eshop.auth_server;
+package com.deyvisonborges.eshop.authorizer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

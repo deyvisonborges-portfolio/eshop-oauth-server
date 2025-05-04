@@ -74,7 +74,6 @@ public class ClientsStoreConfig {
 
         /**
          * Define a URI para onde o usuário será redirecionado após fazer logout.
-         * 
          * Útil para redirecionar o usuário para uma página específica após o logout.
          */
         .postLogoutRedirectUri("http://127.0.0.1:8080/")
